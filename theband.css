@@ -1,0 +1,372 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+html{
+    font-family: "Lato",sans-serif;
+    position: relative;
+}
+#header{
+    height:46px;
+    width:100vw;
+    background-color: #000;
+    position:fixed;
+    top:0px;
+    z-index:10;
+}
+#header .nav{
+    list-style-type: none;
+    display:flex;
+    
+}
+.nav li a{
+    text-decoration: none;
+    color:white;
+    padding:15px 24px;
+    line-height: 46px;
+}
+.nav li a:hover{
+    background-color: #ccc;
+    color:#000
+}
+.nav .sub-nav:hover i{
+    animation: spin 0.5s ease;
+    animation-fill-mode: forwards;
+    cursor:pointer;
+}
+.nav .sub{
+    list-style: none;
+    box-shadow: 2px 2px 15px black;
+    display:none;
+    background-color: white;
+}
+.nav .sub li{
+   padding:5px 5px 8px 5px;
+}
+.nav .sub-nav:hover .sub{
+    display:block;
+}
+.sub li:hover{
+    background-color: #ccc;
+}
+.nav .sub-nav:hover a{
+    background-color: #ccc;
+    color:black;
+}
+#header .search-icon{
+    position: absolute;
+    top:0;
+    right:0;
+    color:white;
+    padding:14px 34px 14px 20px;
+}
+.search-icon:hover{
+    color:black;
+    background-color: #F44336;
+    cursor:pointer;
+}
+#slider{
+    width:100vw;
+    height:auto;
+}
+#content .slide-1{
+    padding-top:50%;
+    margin-top:46px;
+    background: url(./theband.img/Slider/slide-1.jpg);
+    background-size: contain;
+    position: relative;
+    color:whitesmoke;
+    image-rendering: pixelated;
+}
+.title-slider{
+    position: absolute;
+    bottom:180px;
+    left:46%;
+    text-shadow: 2px 2px 10px white;
+    font-weight:200;
+}
+.content-slider{
+    position: absolute;
+    bottom:120px;
+    left:39%;
+    text-shadow: 2px 2px 10px white;
+}
+.title{
+    text-align: center;
+    padding:120px 0px 20px 0px;
+    font-weight: 200;
+}
+.sub-title{
+    text-align: center;
+    padding-bottom:20px;
+    font-style: italic;
+    color:#aaa;
+}
+#the-band .content{
+    margin-left:320px;
+    margin-right:320px;
+    text-align: justify;
+}
+.the-band-img{
+    margin:0px 300px;
+    list-style-type: none;  
+}
+.the-band-img li{
+    height:370px;
+    width:200px;
+    float:left;
+    margin:62px 53px 0px;
+}
+.the-band-img p{
+    text-align: center;
+}
+.the-band-img div{
+    background-image: url(./theband.img/Slider/bandmember.jpg);
+    width:160px;
+    height:160px;
+    background-size: contain;
+    border-radius: 10px 10px;
+    position: relative;
+    top:15px;
+    left:20px;
+}
+@keyframes spin{
+    0%{transform: rotate(0deg);}
+    100%{transform:rotate(180deg);}
+}
+#tour .title{
+    margin-top:400px;
+    padding-bottom:30px;
+    color:white;
+}
+#tour{
+    background-color: black;
+    clear:left;
+    padding-bottom:400px;
+}
+.buy-ticket li{
+    height:38px;
+    width:55vw;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    margin-left:auto;
+    margin-right:auto;
+    line-height:38px;
+    padding-left:14px;
+    color:#757575;
+}
+.buy-ticket{
+    list-style-type: none;
+    margin-top:40px;
+}
+.sold-out{
+    background-color: #F44336;
+    color:white;
+    margin-left:15px;
+    padding:4px 6px;
+    border-radius: 5px 5px;
+}
+.end{
+    background-color: #000;
+    color:white;
+    border-radius: 50%;
+    padding:2px 5px;
+    margin-left:45vw;
+}
+#tour .place-body div{
+    background-color: white;
+    height:335px;
+    width:230px;
+    margin-top:20px;
+    float:left;
+    margin:0 78px 10px 0
+}
+.place-body{
+    margin:32px 0px 0px 336px;
+    font-size: 15px;
+}
+.place-body img{
+    width:230px;
+    background-size: contain;
+}
+.place-body p{
+    margin:15px;
+}
+.place{
+   margin:20px 0px 0px 15px;
+}
+.place-body button{
+    margin-left:15px;
+    color:white;
+    background-color: black;
+    padding:5px;
+    border-radius: 5px 5px;;
+}
+.place-body button:hover{
+    background-color: #ccc;
+    color:#000;
+    border:1px solid #ccc;
+}
+.time{
+    color:#757575
+}
+#contact{
+    position: relative;
+}
+.contact-address{
+    list-style-type: none;
+    position: absolute;
+    left:25vw;
+    top:240px;
+}
+.contact-address li{
+    padding-bottom:7px;
+    font-size: 18px;
+}
+.contact-address li i{
+    padding-right:10px;
+}
+.input-box{
+    width:380px;
+    height:120px;
+}
+.last-input{
+    width:370px;
+    height:40px;
+    padding:8px;
+}
+.first-input{
+    height:40px;
+    padding:8px;
+    margin-bottom: 6px;
+}
+.input-box{
+    position: absolute;
+    top:230px;
+    right:20vw;
+    padding-bottom:270px;
+}
+.input-box button{
+    padding:10px;
+    margin:15px 0px 0px 305px ;
+    color:white;
+    background-color: black;
+    font-size: 15px;
+}
+.input-box button:hover{
+    color:black;
+    background-color: #ccc;
+    border: 2px solid #ccc;
+}
+.map-img{
+    background: url(./theband.img/Slider/map.jpg);
+    padding-top: 50%;
+    background-size: cover;
+    margin-top:300px;
+    opacity: 0.9;
+}
+#footer{
+    text-align: center;
+}
+#footer h3 a{
+    color:#757575;
+}
+#footer h3{
+    color:#757575;
+    font-size: 15px;
+    font-weight: 200;
+}
+.footer-icon{
+    color:#757575;
+    margin-top:80px;
+    margin-bottom:20px;
+}
+#footer h3{
+    padding-bottom:80px;
+}
+.footer-icon i:hover{
+    color:#ddd;
+}
+.modal{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    background-color: rgba(0,0,0,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-box{
+    position: fixed;
+    width:900px;
+    min-height:343px;
+    background-color: white;
+}
+.modal-header{
+    text-align: center;
+    font-size: 30px;
+    color:white;
+    background-color: #009688;
+    padding:45px 0;
+}
+.modal-header i{
+    padding-right:10px;
+}
+.close-icon{
+    position: absolute;
+    top:0;
+    right:0;
+    font-size: 20px;
+    padding:8px 0 8px 10px;
+}
+.close-icon:hover{
+    color:black;
+    background-color: #ddd;
+}
+.modal-title{
+    font-size: 15px;
+    padding-bottom:8px;
+}
+.modal-title i{
+    padding-right:8px;
+}
+.modal-body{
+    padding:15px 15px;
+}
+.modal-body input{
+    border: 1px solid #ddd;
+    padding:8px 0px 8px 8px;
+    width:100%;
+    margin-bottom:20px;
+}
+.modal-pay{
+    font-size: 15px;
+    background-color: #009688;
+    color:white;
+    text-align: center;
+    padding:15px 0;
+}
+.modal-pay:hover{
+    opacity: 0.6;
+}
+.modal-footer{
+    padding-bottom:25px;
+    font-size: 15px;
+}
+.modal-footer p{
+    text-align: right;
+    padding-right:10px;
+}
+.modal-footer a{
+    color:#2196F3;
+    padding-left:4px;
+}
+
+
+
+
+
+
